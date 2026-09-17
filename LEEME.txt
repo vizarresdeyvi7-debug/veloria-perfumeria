@@ -1,13 +1,31 @@
-VELORIA - SITIO WEB
-Abrir index.html para iniciar en la portada.
+VELORIA - VERSION CONECTADA A SUPABASE
 
-Páginas:
-index.html = Inicio
-catalogo.html = Catálogo
-todos.html = Todos
-dama.html = Damas
-caballero.html = Caballeros
-promociones.html = Promociones
-contacto.html = Contacto
+Esta versión conecta la tienda pública con Supabase y contiene un panel privado de administración.
 
-Cada apartado tiene acceso real mediante páginas independientes.
+Archivos principales:
+- index.html = Inicio
+- catalogo.html = Catálogo
+- todos.html = Todos
+- dama.html = Damas
+- caballero.html = Caballeros
+- promociones.html = Promociones
+- contacto.html = Contacto
+- admin.html = Panel privado
+- supabase-config.js = conexión pública de Supabase
+- veloria.js / styles.css = funciones y diseño
+
+IMPORTANTE:
+1. No compartas ninguna Secret key de Supabase.
+2. La Publishable key incluida en supabase-config.js está pensada para el navegador y está protegida por RLS.
+3. El panel admin no aparece en el menú público.
+4. El administrador debe iniciar sesión con su cuenta de Supabase.
+
+CONFIGURACIÓN YA REALIZADA EN SUPABASE:
+- Tabla products
+- Tabla site_settings
+- Tabla promotions
+- RLS y políticas para el administrador
+- Bucket público productos
+- Políticas de subida, actualización y eliminación para el administrador
+
+Para publicar en GitHub Pages, sube el CONTENIDO de esta carpeta al directorio raíz del repositorio, manteniendo index.html en la raíz.
