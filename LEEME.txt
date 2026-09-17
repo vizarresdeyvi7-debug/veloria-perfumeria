@@ -1,0 +1,13 @@
+VELORIA - SITIO WEB
+Abrir index.html para iniciar en la portada.
+
+Páginas:
+index.html = Inicio
+catalogo.html = Catálogo
+todos.html = Todos
+dama.html = Damas
+caballero.html = Caballeros
+promociones.html = Promociones
+contacto.html = Contacto
+
+Cada apartado tiene acceso real mediante páginas independientes.
